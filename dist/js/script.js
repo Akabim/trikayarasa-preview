@@ -20,8 +20,6 @@ window.onscroll = function () {
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
-  noSwiping: true,
-  noSwipingClass: "swiper-slide",
   loop: true,
   autoplay: {
     delay: 1500,

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,27 +17,28 @@
     <link href="./dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <!-- <script src="https://unpkg.com/feather-icons"></script> -->
-    <!-- Links -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Title -->
     <title>Trikayarasa Food | Produsen Bawang Goreng Terbaik Di Jawa Timur</title>
   </head>
   <body class="overflow-x-hidden scroll-smooth">
     <!-- Header Section -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-50">
       <div class="container mx-auto">
         <div class="flex items-center justify-between relative py-1 px-4">
           <div class="px-4 flex">
             <img src="./dist/img/logo trikayarasa.png" class="block py-6 self-center mr-72 logo" width="150px" height="px" alt="trikayarasa logo" />
           </div>
-          <img src="./dist/img/pattern-rectangle.webp" draggable="false" class="flex-shrink-0 w-[234.977px] h-[234.977px] rotate-[11.713deg] absolute -top-32 -right-40 lg:hidden" alt="" />
+          <img src="./dist/img/pattern-rectangle.webp" draggable="false" class="flex-shrink-0 w-[234.977px] h-[234.977px] rotate-[11.713deg] absolute -top-32 -right-40 lg:hidden z-30" alt="" />
           <div class="flex items-center px-4">
-            <button id="hamburger" name="hamburger" type="button" class="lg:hidden block absolute right-4">
+            <button id="hamburger" name="hamburger" type="button" class="lg:hidden block absolute right-4 z-50">
               <span class="hamburger-line transition duration-300 ease-in-out origin-top-left rotate-45;"></span>
               <span class="hamburger-line transition duration-300 ease-in-out"></span>
               <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
             </button>
-            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[200px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none z-30">
-              <ul class="block lg:flex">
+            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[200px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none z-50">
+              <ul class="block lg:flex z-50">
                 <li class="group">
                   <a href="#home" class="text-dark font-primary-font font-paragraph lg:text-secondary-color py-2 px-8 group-hover:text-primary-color group-hover:font-semibold flex">Beranda</a>
                 </li>
@@ -76,18 +77,18 @@
       <!-- End Pattern Home -->
       <div class="container mx-auto">
         <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2">
-            <div class="relative mt-5 lg:mt-5 lg:self-end"><img src="dist/img/hero-img.webp" alt="bagorin" width="844" height="858" class="max-w-full mx-auto relative lg:scale-150 lg:-left-36 z-20" /></div>
+          <div data-aos="fade-down" data-aos-duration="1700" class="w-full self-center px-4 lg:w-1/2 z-10">
+            <div class="relative mt-5 lg:mt-5 lg:self-end z-10"><img src="dist/img/hero-img.webp" alt="bagorin" width="844" height="858" class="max-w-full mx-auto relative lg:scale-150 lg:-left-36 z-10" /></div>
           </div>
           <div class="w-full self-center px-4 lg:pt-16 lg:self-start lg:w-1/2">
-            <h1 class="font-bold font-primary-font text-3xl lg:leading-snug lg:text-5xl text-center lg:text-start">
+            <h1 data-aos="fade-down" data-aos-delay="500" data-aos-duration="1500" class="font-bold font-primary-font text-3xl lg:leading-snug lg:text-5xl text-center lg:text-start">
               Trikayarasa <br />
               Pendamping Makananmu
             </h1>
-            <p class="text-center mt-5 lg:mt-5 justify-center w-86 font-primary-font font-medium lg:text-lg text-[#757575] lg:text-start">
+            <p data-aos="fade-down" data-aos-duration="1500" data-aos-delay="700" class="text-center mt-5 lg:mt-5 justify-center w-86 font-primary-font font-medium lg:text-lg text-[#757575] lg:text-start">
               PT TRIKAYARASA FOOD adalah perusahaan yang bergerak dalam bidang makanan khususnya bawang goreng. Didirikan di Sidoarjo pada tahun 2021 yang bermula dari usaha keluarga.
             </p>
-            <div class="flex lg:mt-5 justify-center lg:justify-start flex-shrink-0">
+            <div class="flex lg:mt-5 justify-center lg:justify-start flex-shrink-0 " data-aos="fade-down" data-aos-duration="1500" data-aos-delay="800">
               <a href="#" class="bg-primary-color mt-5 lg:px-7 px-16 py-4 text-sm font-primary-font font-medium lg:text-lg rounded-full text-bgcolor justify-center inline-flex"
                 ><svg xmlns="http://www.w3.org/2000/svg" class="lg:w-6 lg:h-6 mr-2 lg:mr-3" width="20" height="20" fill="#00000" viewBox="0 0 24 24">
                   <path
@@ -101,25 +102,25 @@
       </div>
     </section>
     <!-- About Section -->
-    <section id="about" class="pb-12 pt-16 lg:pt-0 bg-bgcolor">
-      <img src="./dist/img/pattern-rectangle.webp" class="flex flex-shrink-0 lg:w-[641px] lg:h-[641px] w-[234.98px] h-[234.98px] -rotate-[-11.71deg] absolute lg:-right-96 lg:left-auto -left-52 z-0" alt="" />
+    <section id="about" class="pb-12 pt-16 lg:pt-0 bg-bgcolor ">
+      <img src="./dist/img/pattern-rectangle.webp" class="flex flex-shrink-0 lg:w-[641px] lg:h-[641px] w-[234.98px] h-[234.98px] -rotate-[-11.71deg] absolute lg:-right-96 lg:left-auto -left-52 z-10" alt="" style="z-index: 0;" />
       <div class="container mx-auto">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4">
-            <h1 class="font-bold font-secondary-font text-center text-xl z-10">Tentang Kami</h1>
-            <p class="font-medium font-primary-font text-center text-sm z-10">Brand Story dari Trikayarasa Food</p>
+            <h1 data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500" class="font-bold font-secondary-font text-center text-xl lg:text-2xl z-10">Tentang Kami</h1>
+            <p data-aos="fade-down" data-aos-duration="1500" data-aos-delay="600" class="font-medium font-primary-font text-center text-sm lg:text-lg z-10">Brand Story dari Trikayarasa Food</p>
           </div>
           <div class="w-full self-center px-4 mt-5 lg:mt-0 lg:pl-16 lg:w-1/2">
-            <img src="./dist/img/logo.webp" class="mb-5 lg:ml-0 mx-auto mt-5 hidden lg:flex" width="325px" height="px" alt="trikayarasa logo" />
+            <img data-aos="fade-down" data-aos-duration="1500" data-aos-delay="700" src="./dist/img/logo.webp" class="mb-5 lg:ml-0 mx-auto mt-5 hidden lg:flex" width="325px" height="px" alt="trikayarasa logo" />
             <hr class="bg-primary-color lg:ml-0 w-36 h-1 mx-auto rounded-full" />
-            <p class="font-primary-font text-secondary-color text-center mt-5 text-normal text-sm lg:text-xl lg:text-start text-secondary">
+            <p data-aos="fade-down" data-aos-duration="1500" data-aos-delay="800" class="font-primary-font text-secondary-color text-center mt-5 text-normal text-sm lg:text-xl lg:text-start text-secondary z-40">
               PT TRIKAYARASA FOOD adalah perusahaan yang bergerak dalam bidang makanan khususnya bawang goreng. Didirikan di Sidoarjo pada tahun 2021 yang bermula dari usaha keluarga.
               <br />
               <br />
               Saat ini perusahaan dilanjutkan oleh generasi kedua dan mampu memproduksi 8 ton per hari bawang goreng dengan cita rasa dan kualitas terbaik yang sudah terbukti menduduki peringkat pertama di Jawa Timur.
             </p>
           </div>
-          <div class="w-full self-start px-4 lg:w-1/2 lg:pt-10">
+          <div data-aos="fade-down" data-aos-duration="1500" data-aos-delay="800" class="w-full self-start px-4 lg:w-1/2 lg:pt-10">
             <div class="relative lg:right-0">
               <div class="swiper">
                 <!-- Additional required wrapper -->
@@ -144,23 +145,23 @@
     </section>
     <!-- Visi MIsi -->
     <section id="visi" class="pb-12 pt-16 lg:pt-16 bg-bgcolor">
-      <img src="./dist/img/pattern-rectangle.webp" draggable="false" class="lg:hidden flex flex-shrink-0 lg:w-[641px] lg:h-[641px] w-[234.98px] h-[234.98px] -rotate-[8.65deg] absolute -right-52 lg:-left-96 z-0" alt="" />
+      <img src="./dist/img/pattern-rectangle.webp" draggable="false" class="lg:hidden flex flex-shrink-0 lg:w-[641px] lg:h-[641px] w-[234.98px] h-[234.98px] -rotate-[8.65deg] relative -right-72 lg:-left-96 z-0" alt="" />
       <div class="container mx-auto z-10">
         <div class="flex flex-wrap z-10">
           <div class="w-full self-center px-4 z-10">
-            <h1 class="font-bold font-secondary-font text-center text-xl z-30">Visi & Misi Kami</h1>
-            <p class="font-medium font-primary-font text-center text-sm z-30">Visi dan Misi dari Trikayarasa Food.</p>
+            <h1 data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500" class="font-bold font-secondary-font text-center text-xl lg:text-2xl z-30">Visi & Misi Kami</h1>
+            <p data-aos="fade-down" data-aos-duration="1500" data-aos-delay="600" class="font-medium font-primary-font text-center text-sm lg:text-lg z-30">Visi dan Misi dari Trikayarasa Food.</p>
           </div>
-          <div class="w-full self-end lg:w-1/2 lg:left-0 lg:pt-10">
+          <div data-aos="fade-down" data-aos-duration="1500" data-aos-delay="900" class="w-full self-end lg:w-1/2 lg:left-0 lg:pt-10">
             <div class="relative">
               <img src="./dist/img/asset-kardus.webp" class="scale-110 lg:scale-125 mx-auto" alt="" />
             </div>
           </div>
           <div class="w-full self-center px-4 mt-7 lg:mt-0 lg:pl-16 lg:w-1/2">
-            <h1 class="font-bold font-secondary-font text-center text-xl z-30">VISI</h1>
-            <p class="font-primary-font text-secondary-color text-center mt-5 text-normal text-sm lg:text-xl lg:text-start text-secondary">Menjadi produsen bawang goreng terbaik dan terbesar serta berdaya saing tinggi.</p>
-            <h1 class="font-bold font-secondary-font mt-7 text-center text-xl z-30">MISI</h1>
-            <ol class="list-decimal font-primary-font text-secondary-color text-start mt-5 text-normal text-sm lg:text-xl text-secondary pl-3">
+            <h1 data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500" class="font-bold font-secondary-font text-center text-xl z-30">VISI</h1>
+            <p data-aos="fade-down" data-aos-duration="1500" data-aos-delay="600" class="font-primary-font text-secondary-color text-center mt-5 text-normal text-sm lg:text-xl lg:text-start text-secondary">Menjadi produsen bawang goreng terbaik dan terbesar serta berdaya saing tinggi.</p>
+            <h1 data-aos="fade-down" data-aos-duration="1500" data-aos-delay="700" class="font-bold font-secondary-font mt-7 text-center text-xl z-30">MISI</h1>
+            <ol data-aos="fade-down" data-aos-duration="1500" data-aos-delay="800" class="list-decimal font-primary-font text-secondary-color text-start mt-5 text-normal text-sm lg:text-xl text-secondary pl-3">
               <li class="py-1">Selalu menjaga rasa dan kualitas terbaik untuk konsumen</li>
               <li class="py-1">Selalu mengutamakan kepuasan konsumen</li>
               <li class="py-1">Selalu berinovasi untuk menghadirkan produk dan harga terbaik</li>
@@ -172,14 +173,14 @@
       </div>
     </section>
     <!-- Produk -->
-    <section id="produk" class="pb-12 pt-16 lg:pt-16 bg-bgcolor">
+    <section id="produk" class="pb-12 pt-16 lg:pt-16 bg-bgcolor ">
       <div class="container mx-auto z-10">
         <div class="flex flex-wrap z-10">
           <div class="w-full self-center px-4 z-10">
-            <h1 class="font-bold font-secondary-font text-center text-xl z-30">Produk Kami</h1>
-            <p class="font-medium font-primary-font text-center text-sm z-30">Beberapa produk dari Trikayarasa Food.</p>
+            <h1 data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500" class="font-bold font-secondary-font text-center text-xl lg:text-2xl z-30">Produk Kami</h1>
+            <p data-aos="fade-down" data-aos-duration="1500" data-aos-delay="600" class="font-medium font-primary-font text-center text-sm lg:text-lg z-30">Beberapa produk dari Trikayarasa Food.</p>
           </div>
-            <div class="w-full lg:px-1 px-3 lg:w-1/2 xl:w-1/3 z-40 lg:pt-5 group lg:scale-75 justify-center self-center">
+            <div data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="700" class="w-full lg:px-1 px-3 lg:w-1/2 xl:w-1/3 z-40 lg:pt-5 group lg:scale-75 justify-center self-center">
               <a href="#" class="group relative rounded-2xl mt-5 block overflow-hidden">
                 <div class="relative justify-center bg-transparent p-6">
                   <img src="./dist/img/assets-bagorin.webp" alt="" width="446px" height="322px" class="hover:scale-105 transition lg:pl-3" />
@@ -201,7 +202,7 @@
                 </div>
               </a>
             </div>
-            <div class="w-full lg:px-1 px-3 lg:w-1/2 xl:w-1/3 z-40 lg:pt-5 group lg:scale-75">
+            <div data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="800" class="w-full lg:px-1 px-3 lg:w-1/2 xl:w-1/3 z-40 lg:pt-5 group lg:scale-75">
               <a href="#" class="group relative rounded-2xl mt-5 block overflow-hidden">
                 <div class="relative bg-transparent p-6">
                   <img src="./dist/img/assets-sibah.webp" alt="" width="446px" height="322px" class="hover:scale-105 transition" />
@@ -220,7 +221,7 @@
                 </div>
               </a>
             </div>
-            <div class="w-full lg:px-1 px-3 lg:w-1/2 xl:w-1/3 z-40 lg:pt-5 group lg:scale-75">
+            <div data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="900" class="w-full lg:px-1 px-3 lg:w-1/2 xl:w-1/3 z-40 lg:pt-5 group lg:scale-75">
               <a href="#" class="group relative rounded-2xl mt-5 block overflow-hidden">
                 <div class="relative bg-transparent p-6">
                   <img src="./dist/img/asset-bp.webp" alt="" width="446px" height="322px" class="hover:scale-105 transition" />
@@ -236,12 +237,12 @@
       </div>
     </section>
     <!-- Mitra -->
-    <section id="mitra" class="pb-12 pt-16 lg:pt-16 bg-bgcolor">
+    <section id="mitra" class="pb-12 pt-16 lg:pt-16 bg-bgcolor ">
       <div class="container mx-auto z-10">
         <div class="flex flex-wrap z-10">
           <div class="w-full self-center px-4 z-10">
-            <h1 class="font-bold font-secondary-font text-center text-xl z-30">Mitra Kami</h1>
-            <p class="font-medium font-primary-font text-center text-sm z-30">Beberapa mitra yang bekerja sama dengan kami.</p>
+            <h1 class="font-bold font-secondary-font text-center text-xl lg:text-2xl z-30">Mitra Kami</h1>
+            <p class="font-medium font-primary-font text-center text-sm lg:text-lg z-30">Beberapa mitra yang bekerja sama dengan kami.</p>
           </div>
           <div class="w-full lg:px-1 px-3 lg:w-1/2 xl:w-1/3 z-40 lg:pt-5 group lg:scale-75">
             <a href="#" class="group relative rounded-2xl mt-5 block overflow-hidden">
@@ -268,12 +269,12 @@
       </div>
     </section>
     <!-- Maps -->
-    <section id="contact" class="pb-12 bg-bgcolor">
+    <section id="contact" class="pb-12 lg:pt-16 bg-bgcolor ">
       <div class="container mx-auto">
         <div class="flex-wrap flex justify-center">
           <div class="w-full self-center px-4 z-10 mb-10">
-            <h1 class="font-bold font-secondary-font text-center text-xl z-30">Hubungi Kami</h1>
-            <p class="font-medium font-primary-font text-center text-sm z-30">Beberapa sosial media dan tempat kami.</p>
+            <h1 class="font-bold font-secondary-font text-center text-xl lg:text-2xl z-30">Hubungi Kami</h1>
+            <p class="font-medium font-primary-font text-center text-sm lg:text-lg z-30">Beberapa sosial media dan tempat kami.</p>
           </div>
           <div class=" border-2 p-2 rounded-md border-primary-color">
             <iframe class="rounded-md items-center flex lg:w-[400px] lg:h-[400px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.907590648033!2d112.6176888!3d-7.475456499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780b625e4f7f6f%3A0x6147da7303058d0b!2sPABRIK%20BAWANG%20GORENG%20TRIKAYARASAFOOD%202!5e0!3m2!1sid!2sid!4v1691816326006!5m2!1sid!2sid" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -286,7 +287,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                 </svg>              
               <p class="font-secondary-font font-normal text-secondary-color">
-                Jl. Pecantingan 70, Sekardangan, Sidoarjo, Jawa Timur
+                Desa Tlasih RT 2 RW 2, Tulangan, Sidoarjo, Jawa Timur.
               </p>
           </div>
             <div class="ml-10 lg:ml-0">
@@ -314,6 +315,10 @@
     <!-- Script -->
     <script src="./dist/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- <script>
       feather.replace();
     </script> -->

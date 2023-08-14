@@ -624,6 +624,22 @@ video {
   top: 100%;
 }
 
+.-right-96 {
+  right: -24rem;
+}
+
+.-right-11 {
+  right: -2.75rem;
+}
+
+.-right-72 {
+  right: -18rem;
+}
+
+.-right-64 {
+  right: -16rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -642,6 +658,10 @@ video {
 
 .z-40 {
   z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .mx-2 {
@@ -1083,6 +1103,10 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   scroll-behavior: smooth;
   ovrflow-x: hidden;
@@ -1412,6 +1436,11 @@ body {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:leading-snug {
