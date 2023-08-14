@@ -1,5 +1,6 @@
 const hamburger = document.querySelector("#hamburger");
 const navMenu = document.querySelector("#nav-menu");
+const toTop = document.querySelector("#to-top");
 
 hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("hamburger-active");
@@ -12,8 +13,12 @@ window.onscroll = function () {
 
   if (window.pageYOffset > fixedNav) {
     header.classList.add("navbar-fixed");
+    toTop.classList.remove("hidden");
+    toTop.classList.add("flex");
   } else {
     header.classList.remove("navbar-fixed");
+    toTop.classList.remove("flex");
+    toTop.classList.add("hidden");
   }
 };
 

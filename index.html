@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth overflow-x-hidden">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,7 +30,6 @@
           <div class="px-4 flex">
             <img src="./dist/img/logo trikayarasa.png" class="block py-6 self-center mr-72 logo" width="150px" height="px" alt="trikayarasa logo" />
           </div>
-          <img src="./dist/img/pattern-rectangle.webp" draggable="false" class="flex-shrink-0 w-[234.977px] h-[234.977px] rotate-[11.713deg] absolute -top-32 -right-40 lg:hidden z-30" alt="" />
           <div class="flex items-center px-4">
             <button id="hamburger" name="hamburger" type="button" class="lg:hidden block absolute right-4 z-50">
               <span class="hamburger-line transition duration-300 ease-in-out origin-top-left rotate-45;"></span>
@@ -312,6 +311,12 @@
         </div>
       </div>
     </section>
+    <!-- Back To top -->
+    <a href="#home" class="fixed bottom-5 right-5 z-[9999] hidden h-12 w-12 items-center justify-center rounded-lg bg-primary-color p-4 hover:animate-pulse" id="to-top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16" class="scale-105">
+        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+      </svg></i>
+    </a>
     <!-- Script -->
     <script src="./dist/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
